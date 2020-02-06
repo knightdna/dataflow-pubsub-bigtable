@@ -13,12 +13,12 @@ public class RowGenerator extends DoFn<String, Mutation> {
 
     @ProcessElement
     public void processElement(ProcessContext context) {
-        String decodedHaclAsJsonString = context.element();
+        String decodedMessageAsJsonString = context.element();
         String rowKey = String.valueOf(
                 LocalDateTime.ofInstant(Instant.now(), ZoneId.of("UTC"))
                         .toEpochSecond(ZoneOffset.UTC));
         Put put = new Put(rowKey.getBytes());
-        put.addColumn("VALUE".getBytes(), "VALUE".getBytes(), decodedHaclAsJsonString.getBytes());
+        put.addColumn("VALUE".getBytes(), "VALUE".getBytes(), decodedMessageAsJsonString.getBytes());
         context.output(put);
     }
 

@@ -19,8 +19,9 @@ import java.util.Map;
 public class EventStore {
 
     private static final String GOOGLE_APPLICATION_CREDENTIALS = "GOOGLE_APPLICATION_CREDENTIALS";
+    
+    // Change these properties accordingly 
     private static final String SERVICE_ACCOUNT_KEY_PATH = "/path/to/keyfile.json";
-
     private static final String PROJECT_ID = "gcp-project-id";
     private static final String PUBSUB_SUBSCRIPTION = "pubsub-subscription-name";
     private static final String INSTANCE_ID = "instance-id";
