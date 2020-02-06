@@ -34,15 +34,9 @@ sourceSets {
 }
 
 dependencies {
-    compile group: 'com.google.guava', name: 'guava', version: '23.0'
-    compile group: 'com.google.cloud.bigtable', name: 'bigtable-client-core', version: '1.13.0'
-    compile group: 'com.google.cloud.bigtable', name: 'bigtable-hbase-beam', version: '1.13.0'
-    compile group: 'com.google.cloud.dataflow', name: 'google-cloud-dataflow-java-sdk-all', version: '2.5.0'
-    compile group: 'org.apache.beam', name: 'beam-sdks-java-core', version: "${beam_version}"
-    compile group: 'org.apache.beam', name: 'beam-sdks-common-fn-api', version: "${beam_version}"
-    compile group: 'org.apache.beam', name: 'beam-sdks-common-runner-api', version: "${beam_version}"
-    compile group: 'org.apache.beam', name: 'beam-sdks-java-extensions-join-library', version: "${beam_version}"
-    compile group: 'org.apache.beam', name: 'beam-sdks-java-extensions-google-cloud-platform-core', version: "${beam_version}"
-    compile group: 'org.apache.beam', name: 'beam-runners-google-cloud-dataflow-java', version: "${beam_version}"
-    compile group: 'org.projectlombok', name: 'lombok', version: '1.18.10'
+    compile group: 'com.google.cloud.bigtable', name: 'bigtable-hbase-beam', version: "1.13.0"
+    compile group: 'org.apache.beam', name: 'beam-runners-google-cloud-dataflow-java', version: "2.18.0"
+    compile group: 'org.projectlombok', name: 'lombok', version: "1.18.0"
+    compile group: 'org.slf4j', name: 'slf4j-api', version: "1.7.30"
+    compile group: 'org.slf4j', name: 'slf4j-simple', version: "1.7.30"
 }
